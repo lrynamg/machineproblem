@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFAF4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="218dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cupofcoffee_removebg_preview" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/inknut_antiqua_black"
+            android:text="Registration"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkpink"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inknut_antiqua"
+            android:text="Reserve your seat at the study cafe!"
+            android:textAlignment="center"
+            android:textColor="@color/darkpink"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inknut_antiqua"
+            android:text="First Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/darkpink"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/txtFname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:ems="5"
+            android:inputType="text"
+            android:hint="Juan"
+            android:background="@drawable/custom_input"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inknut_antiqua"
+            android:text="Last Name"
+            android:textColor="@color/darkpink"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/txtLname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Dela Cruz"
+            android:textSize="12sp"
+            android:background="@drawable/custom_input"
+            android:padding="8dp"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inknut_antiqua"
+            android:text="Email"
+            android:textColor="@color/darkpink"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="name@gmail.com"
+            android:textSize="12sp"
+            android:background="@drawable/custom_input"
+            android:padding="8dp"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inknut_antiqua"
+            android:text="Favorite Drink"
+            android:textColor="@color/darkpink"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/txtDrink"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Matcha"
+            android:textSize="12sp"
+            android:background="@drawable/custom_input"
+            android:padding="8dp"
+            android:elevation="4dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="234dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/inknut_antiqua_black"
+        android:text="Save my Spot at the Cafe"
+        android:textColor="#897174"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.049" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

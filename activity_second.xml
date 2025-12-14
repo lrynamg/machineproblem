@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E2E8"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="465dp"
+        android:background="@drawable/bg_card"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inknut_antiqua_black"
+            android:lineHeight="24dp"
+            android:text="Membership Confirmation"
+            android:textAlignment="center"
+            android:textColor="@color/darkpink"
+            android:textSize="20sp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView10"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/inknut_antiqua_black"-->
+        <!--            android:text="Confirmation"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/darkpink"-->
+        <!--            android:textSize="20sp" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#CCCCCC" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="265dp"
+            android:layout_height="221dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/cafesticker_removebg_preview" />
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inknut_antiqua"
+            android:lineHeight="4dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/darkpink" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:fontFamily="@font/inknut_antiqua_black"
+                android:textColor="#897174"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/btnStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:fontFamily="@font/inknut_antiqua_black"
+                android:text="Study"
+                android:textColor="#897174" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
